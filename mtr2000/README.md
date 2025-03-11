@@ -1,5 +1,5 @@
-Motorola MTR2000
-================
+W1TKZ Motorola MTR2000
+======================
 
 ## References
 

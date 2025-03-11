@@ -33,3 +33,15 @@ Larry's notes for reference:
 
 ![System Picture](docs/IMG_1860.jpg)
 
+## Programming Cable
+
+The programming connection is the RJ45 jack on the front marked "RSS." This interface uses RS232 levels and can be connected directly to a serial port (DB9 female).
+
+The pin numbers on the RJ45 side provided here follow the T568B standard.
+
+* DB9 pin 2 -> RJ45 pin 6 (solid green)
+* DB9 pin 3 -> RJ45 pin 7 (striped write/brown)
+* DB9 pin 6 -> RJ45 pin 5 (striped white/blue)
+
+*NOTE:* There are some conflicting pinouts on the Repeater Builder page. Use caution here. The cable explained here has been tested on the W1TKZ MTR2000.
+ 

@@ -27,3 +27,8 @@ Notes on photo below:
 * The connection farthest to the right is the shield.  Appears to be C-31, which is different from what Larry's handwritten notes showed (his notes had A-19)
 
 ![System Picture](docs/MTR2000-1.jpg)
+
+Larry's notes for reference:
+
+![System Picture](docs/IMG_1860.jpg)
+

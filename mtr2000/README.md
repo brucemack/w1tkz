@@ -17,7 +17,7 @@ Cable out of the back of the controller:
 * Shield (A-19) Ground. This appears to be the signal ground for TTL I/Os.
 * Black (B-27) Ground.
 
-The interface documentation linked above seems to imply that the shield and black wire ground are the same thing, but this doesn't appear to be the case.  Testing indicates that he TTL signals are referenced to pin A-19 (shield).
+The interface documentation linked above seems to imply that the shield and black wire ground are the same thing, but testing indicates that the TTL signals are referenced to pin A-19 (shield). The grounds are not the same.
 
 Notes on photo below:
 

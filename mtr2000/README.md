@@ -17,7 +17,7 @@ Cable out of the back of the controller:
 * Shield (C-31) Ground. This appears to be the signal ground for TTL I/Os.
 * Black (B-27) Ground.
 
-The W7RHC interface documentation linked above seems to imply that the shield and black wire ground are the same thing, but testing indicates that the TTL signals are referenced to pin A-19 (shield). The grounds are not the same.
+The W7RHC interface documentation linked above seems to imply that the shield and black wire ground are the same thing, but testing indicates that the TTL signals are referenced to pin A-19 (shield). The grounds are not the same.  In fact, I measured the resistance between the Black wire and the shield and it is not zero ohms. (MORE RESEARCH NEEDED HERE)  
 
 Notes on photo below:
 
@@ -44,4 +44,11 @@ The pin numbers on the RJ45 side provided here follow the T568B standard.
 * DB9 pin 6 -> RJ45 pin 5 (striped white/blue)
 
 *NOTE:* There are some conflicting pinouts on the Repeater Builder page. Use caution here. The cable explained here has been tested on the W1TKZ MTR2000.
- 
+
+## Notes on PL Tone
+
+Copied from Repeater Builder page: 
+
+“When you go to hook an MTR2000 to an external controller (like an RLC, Arcom, or Scom) you will discover a known "gotcha!" that the station (repeater) does not transmit PL when using the System Connector auxiliary audio input and EPTT (External PTT). You will need to sum your external PL encoder audio and the transmit audio and then inject the mixed audio into the aux audio input pin. When Zetron was doing paging with MSFs they created their own integrated summing amplifier and built it into a cable (part # 950-9919). Motorola relabeled it as the CDN6321 Zetron interface kit. But try and find one… Or just the schematic… When you create a summing amplifier you should have a low-pass filter after the PL encoder so it only lets the sub-audible (below 250 Hz) tone through. The PL level should be separately controlled, and if possible, independent of the total modulation. Likewise the repeat audio should have a high-pass filter in line, so it doesn't let audio get into the sub-audible range, which will interfere with the PL tone. It too should have its own level control. Ideally, these two sources would be isolated and summed by another amplifier followed by a master audio level control.”
+
+

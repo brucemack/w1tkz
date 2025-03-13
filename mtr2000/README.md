@@ -11,7 +11,7 @@ W1TKZ Motorola MTR2000
 Cable out of the back of the controller:
 
 * Blue (A-17) Auxiliary Transmit Audio.
-* Green (C-2) Receiver Un-Squelched.  TTL output active high.
+* Green (C-2) Receiver Un-Squelched and PL detected. TTL output active high, meaning: 0V normally and +5V when PL is detected by the receiver.
 * Red (C-10) External PTT.  TTL input active low.  
 * Yellow (C-17) Discriminator Audio Output.  +2.5V DC bias measured.
 * Shield (C-31) Ground. 
@@ -24,11 +24,11 @@ Notes on photo below:
 * Using the green wire on the left as an example, this is plugged into the top row, second column from left. Numbering: C-2.
 * The connection farthest to the right is the shield.  Appears to be C-31, which is different from what Larry's handwritten notes showed (his notes had A-19). The W7RHC interface notes
 indicate that C-31 and A-19 are both grounds.
-* The black wire is connected to pin B-29. The purpose of this is unknown and we'll ignore it. It may have been a wiring error.
+* The black wire is connected to pin B-29. The purpose of this is unknown and we'll ignore it. It may have been a wiring error that was intended for B-27.
 
 ![System Picture](docs/IMG_1867.jpg)
 
-Larry's notes for reference:
+Larry's notes for reference. Beware of the B-27 vs B-29 confusion:
 
 ![System Picture](docs/IMG_1860.jpg)
 

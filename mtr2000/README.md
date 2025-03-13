@@ -14,10 +14,8 @@ Cable out of the back of the controller:
 * Green (C-2) Receiver Un-Squelched.  TTL output active high.
 * Red (C-10) External PTT.  TTL input active low.  
 * Yellow (C-17) Discriminator Audio Output.  +2.5V DC bias measured.
-* Shield (C-31) Ground. This appears to be the signal ground for TTL I/Os.
-* Black (B-27) Ground.
-
-The W7RHC interface documentation linked above seems to imply that the shield and black wire ground are the same thing, but testing indicates that the TTL signals are referenced to pin A-19 (shield). The grounds are not the same.  In fact, I measured the resistance between the Black wire and the shield and it is not zero ohms. (MORE RESEARCH NEEDED HERE)  
+* Shield (C-31) Ground. 
+* Black (B-29) UNKNOWN.
 
 Notes on photo below:
 
@@ -26,8 +24,9 @@ Notes on photo below:
 * Using the green wire on the left as an example, this is plugged into the top row, second column from left. Numbering: C-2.
 * The connection farthest to the right is the shield.  Appears to be C-31, which is different from what Larry's handwritten notes showed (his notes had A-19). The W7RHC interface notes
 indicate that C-31 and A-19 are both grounds.
+* The black wire is connected to pin B-29. The purpose of this is unknown and we'll ignore it. It may have been a wiring error.
 
-![System Picture](docs/MTR2000-1.jpg)
+![System Picture](docs/IMG_1867.jpg)
 
 Larry's notes for reference:
 
@@ -49,6 +48,4 @@ The pin numbers on the RJ45 side provided here follow the T568B standard.
 
 Copied from Repeater Builder page: 
 
-“When you go to hook an MTR2000 to an external controller (like an RLC, Arcom, or Scom) you will discover a known "gotcha!" that the station (repeater) does not transmit PL when using the System Connector auxiliary audio input and EPTT (External PTT). You will need to sum your external PL encoder audio and the transmit audio and then inject the mixed audio into the aux audio input pin. When Zetron was doing paging with MSFs they created their own integrated summing amplifier and built it into a cable (part # 950-9919). Motorola relabeled it as the CDN6321 Zetron interface kit. But try and find one… Or just the schematic… When you create a summing amplifier you should have a low-pass filter after the PL encoder so it only lets the sub-audible (below 250 Hz) tone through. The PL level should be separately controlled, and if possible, independent of the total modulation. Likewise the repeat audio should have a high-pass filter in line, so it doesn't let audio get into the sub-audible range, which will interfere with the PL tone. It too should have its own level control. Ideally, these two sources would be isolated and summed by another amplifier followed by a master audio level control.”
-
-
+> “When you go to hook an MTR2000 to an external controller (like an RLC, Arcom, or Scom) you will discover a known "gotcha!" that the station (repeater) does not transmit PL when using the System Connector auxiliary audio input and EPTT (External PTT). You will need to sum your external PL encoder audio and the transmit audio and then inject the mixed audio into the aux audio input pin. When Zetron was doing paging with MSFs they created their own integrated summing amplifier and built it into a cable (part # 950-9919). Motorola relabeled it as the CDN6321 Zetron interface kit. But try and find one… Or just the schematic… When you create a summing amplifier you should have a low-pass filter after the PL encoder so it only lets the sub-audible (below 250 Hz) tone through. The PL level should be separately controlled, and if possible, independent of the total modulation. Likewise the repeat audio should have a high-pass filter in line, so it doesn't let audio get into the sub-audible range, which will interfere with the PL tone. It too should have its own level control. Ideally, these two sources would be isolated and summed by another amplifier followed by a master audio level control.”

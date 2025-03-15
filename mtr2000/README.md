@@ -13,7 +13,7 @@ repeater system.
 
 Cable out of the back of the repeater:
 
-| Color  | MTR2000 Pin | MTT2000 Purpose             | DB9F Pin |
+| Color  | MTR2000 Pin | MTR2000 Purpose             | DB9F Pin |
 |--------|-------------|-----------------------------|----------|
 | Blue   | A-17        | Auxiliary Transmit Audio In |    2     |
 | Green  | C-2         | Receiver Un-Squelched and PL detected (TTL output active high) | 6  | 

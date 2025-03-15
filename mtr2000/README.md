@@ -66,13 +66,12 @@ at the moment.
 
 DIP switch SW2 has some configuration related to the MTR2000 (Radio #2):
 
-* SW2 position 2 is off, which disables the COR invert for receiver #2.
+* SW2 position 2 is off, which disables the COR invert for receiver #2. 
 * SW2 position 8 on on, which enables the PTR invert for transmitter #2. 
 
-See the picture below:
+See the picture below of switch settings.
 
-
-
+![System Picture](docs/IMG_1891.jpg)
 
 ## MTR2000 Programming Cable
 

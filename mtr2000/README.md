@@ -63,7 +63,7 @@ NOTES:
 on the DB9F connector that goes to the MTR2000. We are not using this signal
 at the moment.
 
-## SCOM7k Controller Configuration Notes (Related to MTR2000)
+## SCOM7K Controller Configuration Notes (Related to MTR2000)
 
 DIP switch SW2 has some configuration related to the MTR2000 (Radio #2):
 

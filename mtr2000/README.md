@@ -1,6 +1,9 @@
 W1TKZ Motorola MTR2000
 ======================
 
+As of March 15, 2025 we use the MTR2000 on the UHF side of the W1TKZ 
+repeater system.
+
 ## References
 
 * [Repeater Builder Index Page](https://www.repeater-builder.com/motorola/mtr2k/mtr-index.html)

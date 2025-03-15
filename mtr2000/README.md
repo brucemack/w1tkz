@@ -40,29 +40,30 @@ Larry's notes for reference. Beware of the B-27 vs B-29 confusion:
 
 ![System Picture](docs/IMG_1860.jpg)
 
-### Interface With W1TKZ SCOM-7000 Repeater Controller
+### Interface With W1TKZ SCOM7K Repeater Controller
 
 The MTR2000 repeater control cable described above is terminated in a DB9F connector.
-This is connected to a DB9M connector that goes to the SCOM 7000 repeater controller
-via the DB25 connector on the back of the SCOM controller. This is a custom cable described
-below:
+This is connected to a DB9M connector that goes to the SCOM7K repeater controller
+via the DB25 connector on the back of the SCOM7K controller. This is a custom cable described
+below.  The MTR2000 plays the role of radio 2 from the perspective of the 
+SCOM7K.
 
-| DB9M Pin | Color  | SCOM Purpose | SCOM DB25 Pin |
-|----------|--------|--------------|---------------|
-| 3        | Yellow | PTT-2        | 11            |
-| 7        | Green  | CTCSS-2      | 6             | 
-| 5        | Blue   | RX-AUDIO-2   | 8             |
-| 6        | Orange | COR-2        | 3             | 
-| 2        | Red    | TX-AUDIO-2   | 15            | 
-| 9        | Black  | GND          | 21            |
-| Shell    | Shield | GND          | 21            |
+| DB9M Pin | Color  | SCOM7K Purpose | SCOM7K DB25 Pin |
+|----------|--------|----------------|-----------------|
+| 3        | Yellow | PTT-2          | 11              |
+| 7        | Green  | CTCSS-2        | 6               | 
+| 5        | Blue   | RX-AUDIO-2     | 8               |
+| 6        | Orange | COR-2          | 3               | 
+| 2        | Red    | TX-AUDIO-2     | 15              | 
+| 9        | Black  | GND            | 21              |
+| Shell    | Shield | GND            | 21              |
 
 NOTES:
 * Pin 7 on the DB9M connector does not have a corresponding pin
 on the DB9F connector that goes to the MTR2000. We are not using this signal
 at the moment.
 
-## SCOM 7000 Controller Configuration Notes (Related to MTR2000)
+## SCOM7k Controller Configuration Notes (Related to MTR2000)
 
 DIP switch SW2 has some configuration related to the MTR2000 (Radio #2):
 

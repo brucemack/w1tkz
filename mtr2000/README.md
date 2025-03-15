@@ -11,7 +11,7 @@ repeater system.
 
 ## Controller Interface Cable
 
-Cable out of the back of the controller:
+Cable out of the back of the repeater:
 
 | Color  | MTR2000 Pin | MTT2000 Purpose             | DB9F Pin |
 |--------|-------------|-----------------------------|----------|
@@ -23,10 +23,10 @@ Cable out of the back of the controller:
 | Black  | B-29        | UNKNOWN                     |  None    |
 
 NOTES:
-* The MTR2000 asserts +5V on green wire (DB9F pin 6) for COS.
+* The MTR2000 asserts +5V on the green wire (DB9F pin 6) for COS.
 * The red wire (DB9F pin 3) must be pulled to ground to activate the MTR2000 PTT.
-* Pins 2 and 5 above have DC blocking capacitors with + side facing the MTR2000
-inside of the DB9F.
+* Audio pins 2 and 5 above have DC blocking capacitors with + side facing the MTR2000
+inside of the DB9F shell.
 * +2.5V DC bias measured on discriminator audio output.
 
 Notes on photo below:

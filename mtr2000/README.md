@@ -115,7 +115,7 @@ to the same COS output on the old UHF radio.
 ## Open Issues to Work On (As of 15-March-2025)
 
 * The UHF output does not include a PL tone. The reason for this 
-is described in the previous section. We will address this 
+is described in a previous section. We will address this 
 at a later date, but meanwhile it's not a big deal as long as users
 are reminded to turn off their tone squelch. 
 * UHF input does not repeat onto UHF output.  It *does* repeat onto the VHF output. My 

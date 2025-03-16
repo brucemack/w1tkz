@@ -77,6 +77,10 @@ See the picture below of switch settings.
 
 ![System Picture](docs/IMG_1891.jpg)
 
+Audio adjustments were made using these SCOM7K potentiometers;
+* RX2 level - R98
+* TX2 level - R105
+
 ## MTR2000 Programming Cable
 
 The programming connection is the RJ45 jack on the front marked "RSS." This interface uses RS232 levels and can be connected directly to a serial port (DB9 female).
@@ -94,3 +98,29 @@ The pin numbers on the RJ45 side provided here follow the T568B standard.
 Copied from Repeater Builder page: 
 
 > “When you go to hook an MTR2000 to an external controller (like an RLC, Arcom, or Scom) you will discover a known "gotcha!" that the station (repeater) does not transmit PL when using the System Connector auxiliary audio input and EPTT (External PTT). You will need to sum your external PL encoder audio and the transmit audio and then inject the mixed audio into the aux audio input pin. When Zetron was doing paging with MSFs they created their own integrated summing amplifier and built it into a cable (part # 950-9919). Motorola relabeled it as the CDN6321 Zetron interface kit. But try and find one… Or just the schematic… When you create a summing amplifier you should have a low-pass filter after the PL encoder so it only lets the sub-audible (below 250 Hz) tone through. The PL level should be separately controlled, and if possible, independent of the total modulation. Likewise the repeat audio should have a high-pass filter in line, so it doesn't let audio get into the sub-audible range, which will interfere with the PL tone. It too should have its own level control. Ideally, these two sources would be isolated and summed by another amplifier followed by a master audio level control.”
+
+## Testing Notes from 15-March-2025
+
+After the old UHF radio was removed we did a few tests using the disconnected
+end of the controller cable.
+
+* When the orange COR-2 line was grounded we saw SCOM LEDs "RX2 COS" and "TX1 PTT" turn on.  This is consistent with the observation that UHF receive is 
+properly repeated onto VHF.
+* When the green CTCSS-2 line was grounded we saw SCOM LED "RX2 CTCSS" turn on and nothing else (i.e. no transmit).  This is consistent with the theory that the SCOM configuration
+is only being triggered by the RX2 COS input at the moment. 
+* When the orange COR-2 line and green CTCSS-2 lines were both grounded we saw SCOM LEDs "RX2 COS", "RX2 CTCSS" and "TX1 PTT" turn on.  This is most similar
+to the old UHF configuration since both the orange and green wires were tied
+to the same COS output on the old UHF radio.
+
+## Open Issues to Work On (As of 15-March-2025)
+
+* The UHF output does not include a PL tone. The reason for this 
+is described in the previous section. We will address this 
+at a later date, but meanwhile it's not a big deal as long as users
+are reminded to turn off their tone squelch. 
+* UHF input does not repeat onto UHF output.  It *does* repeat onto the VHF output. My 
+current theory is that this is because (a) the old UHF radio was configured
+to "repeat internally" and (b) the controller is programmed not to key the 
+UHF PTT on UHF COS.  This will need to be confirmed.
+* The UHF RX audio is not de-emphasized. It sounds "tinny" on the VHF 
+output. Dan has a way to fix this using an audio filter network.

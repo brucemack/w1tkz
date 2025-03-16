@@ -35,7 +35,9 @@ Notes on photo below:
 * Using the green wire on the left as an example, this is plugged into the top row, second column from left. Numbering: C-2.
 * The connection farthest to the right is the shield.  Appears to be C-31, which is different from what Larry's handwritten notes showed (his notes had A-19). The W7RHC interface notes
 indicate that C-31 and A-19 are both grounds.
-* The black wire is connected to pin B-29. The purpose of this is unknown and we'll ignore it. It may have been a wiring error that was intended for B-27.
+* The black wire is connected to pin B-29. The purpose of this is unknown and we'll ignore it. It may have been a wiring error that was intended for B-27. We
+didn't use this wire during the installation/testing on 15-March and everything
+seemed to work fine.
 
 ![System Picture](docs/IMG_1867.jpg)
 

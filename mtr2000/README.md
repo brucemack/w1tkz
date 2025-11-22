@@ -114,6 +114,15 @@ is only being triggered by the RX2 COS input at the moment.
 to the old UHF configuration since both the orange and green wires were tied
 to the same COS output on the old UHF radio.
 
+## Testing Notes from 22-Nov-2025
+
+During a visit to install the SDRC we did some more testing.
+
+Looking at the DB25 connector that plugs into the repeater
+controller:
+* The **Radio 1 COS** pin (pin #3) tested Hi-Z when the UHF receiver was detecting carrier and tested 512 ohms when no carrier was detected. 
+* The **Radio 1 CTCSS** pin (pin #6) didn't appear to be connected to anything.
+
 ## Open Issues to Work On (As of 15-March-2025)
 
 * The UHF output does not include a PL tone. The reason for this 

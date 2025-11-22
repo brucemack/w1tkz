@@ -1,0 +1,87 @@
+
+* UHF tone sq output is intermittent
+* How much deviation is on the UHF PL tone?  -25 seems high.
+* Needed to max the pot on VHF input, want to get more HW gain
+so we can take out the +6dB software. Make 12dB analog gain. (Special for Yaesu series)
+* Switch to audio taper pots.
+* Ground screw post. Ground to chassis.
+* Consider 3 6dB ranges with jumpers
+* Soft limiter on receive input (1/4 second release)
+* Lockout: At 2 mins need audio indication, add announcement when 
+lockout clean.
+
+Tested *780 kill
+
+AFTER BOOT
+
+ show
+   callsign      : W1TKZ
+   pass          : 78
+   repeatmode    : 2
+   testtonefreq  : 1000.0
+   testtonelevel : -10.0
+   idrequiredint : 600
+
+Radio 0
+R0 cosmode: 1
+R0 cosactivetime: 25
+R0 cosinactivetime: 150
+R0 coslevel: -20.0
+R0 rxtonemode: 1
+R0 rxtoneactivetime: 50
+R0 rxtoneinactivetime: 150
+R0 rxtonelevel: -20.0
+R0 rxtonefreq: 123.0
+R0 rxgain: 6.0
+R0 ctmode: 2
+R0 delaytime: 0
+R0 agcmode: 1
+R0 agclevel: -10.0
+R0 dtmfdetectlevel: -50.0
+R0 deemphmode: 0
+T0 txenable: 1
+T0 txenable2: 1
+T0 txtonemode  : 0
+T0 txtonelevel  : -16.0
+T0 txtonefreq  : 123.0
+T0 txgain  : 0.0
+T0 timeouttime  : 120000
+T0 lockouttime  : 60000
+T0 hangtime  : 1500
+T0 ctlevel  : -10.0
+T0 idmode: 1
+T0 idlevel: -15.0
+T0 rxrepeat : 0 1
+
+Radio 1
+R1 cosmode: 2
+R1 cosactivetime: 25
+R1 cosinactivetime: 150
+R1 coslevel: -40.0
+R1 rxtonemode: 0
+R1 rxtoneactivetime: 50
+R1 rxtoneinactivetime: 150
+R1 rxtonelevel: -60.0
+R1 rxtonefreq: 123.0
+R1 rxgain: 0.0
+R1 ctmode: 3
+R1 delaytime: 0
+R1 agcmode: 1
+R1 agclevel: -10.0
+R1 dtmfdetectlevel: -50.0
+R1 deemphmode: 1
+T1 txenable: 1
+T1 txenable2: 1
+T1 txtonemode  : 1
+T1 txtonelevel  : -25.0
+T1 txtonefreq  : 88.5
+T1 txgain  : 0.0
+T1 timeouttime  : 120000
+T1 lockouttime  : 60000
+T1 hangtime  : 1500
+T1 ctlevel  : -10.0
+T1 idmode: 1
+T1 idlevel: -15.0
+T1 rxrepeat : 0 1
+$
+Meta-Z for help | 115200 8N1 | NOR

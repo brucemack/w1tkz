@@ -1,11 +1,5 @@
-# Configration V3 unit
-$ show
-   callsign      : W1TKZ
-   pass          : 78
-   repeatmode    : 2
-   testtonefreq  : 1000.0
-   testtonelevel : -10.0
-   idrequiredint : 600
+This is the final configuration dumped before leaving 
+the site on 2025-11-22:
 
 Radio 0
 R0 cosmode: 1
@@ -17,14 +11,14 @@ R0 rxtoneactivetime: 50
 R0 rxtoneinactivetime: 150
 R0 rxtonelevel: -20.0
 R0 rxtonefreq: 123.0
-R0 rxgain: 0.0
+R0 rxgain: 6.0
 R0 ctmode: 2
 R0 delaytime: 0
 R0 agcmode: 1
 R0 agclevel: -10.0
 R0 dtmfdetectlevel: -50.0
 R0 deemphmode: 0
-T0 txenable: 0
+T0 txenable: 1
 T0 txenable2: 1
 T0 txtonemode  : 0
 T0 txtonelevel  : -16.0
@@ -39,11 +33,11 @@ T0 idlevel: -15.0
 T0 rxrepeat : 0 1
 
 Radio 1
-R1 cosmode: 1
+R1 cosmode: 2
 R1 cosactivetime: 25
 R1 cosinactivetime: 150
 R1 coslevel: -40.0
-R1 rxtonemode: 1
+R1 rxtonemode: 0
 R1 rxtoneactivetime: 50
 R1 rxtoneinactivetime: 150
 R1 rxtonelevel: -60.0
@@ -55,7 +49,7 @@ R1 agcmode: 1
 R1 agclevel: -10.0
 R1 dtmfdetectlevel: -50.0
 R1 deemphmode: 1
-T1 txenable: 0
+T1 txenable: 1
 T1 txenable2: 1
 T1 txtonemode  : 1
 T1 txtonelevel  : -25.0
@@ -69,4 +63,3 @@ T1 idmode: 1
 T1 idlevel: -15.0
 T1 rxrepeat : 0 1
 $
-Meta-Z for help | 115200 8

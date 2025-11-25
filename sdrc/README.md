@@ -1,9 +1,12 @@
 ## Notes from Visit 2025-11-25
 
 * Swapped digital boards and installed firmware **V1.1 2025-11-23**.
-* Addressed a problem with the lockout.
+* A release was created in GitHub to mark the firmware version (v1.1)
+in production.
+* New code addressed a problem with the lockout.
 * Changed courtesy tone level to -15dB.
-* Changed COS inactivate time to 100ms.
+* Changed COS inactivate time to 100ms from 150ms to shorten 
+static crash at end of transmission.
 * Tested with Dan W1DAN, validated timeout, validated DTMF kill.
 * Briefly switched over to soft CTCSS detect on the VHF side (detect
 level set to -65dB). Functionality was good, but didn't seem faster
